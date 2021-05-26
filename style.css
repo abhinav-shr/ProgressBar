@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: scroll;
+    background-color: whitesmoke;
+}
+.container{
+    text-align: center;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 20px;
+}
+.divider{
+    flex-grow: 1;
+    border-bottom: rgba(100, 148, 237, 0.377) solid 2px;
+    margin: 0px;
+
+}
+.e{
+    border: rgba(100, 148, 237, 0.377) 2px solid;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    color: black ;
+    font-size: x-small;
+}
+nav{
+    margin: 10px auto;
+}
+button{
+    margin: 10px;
+}
+button:hover{
+    background-color: rgb(65, 127, 243);
+}
+
+button[disabled]:hover{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.progress{
+    border-color: cornflowerblue;
+    transition: ease 2s;
+}
+
+
+
+
+
+
+
+/*style for the code two*/
+.container2{
+    text-align: center;
+}
+.bar2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 350px;
+    margin-bottom: 30px;
+}
+.bar2::before{
+    content: '';
+    background-color: rgba(100, 148, 237, 0.377);
+    position: absolute;
+    top: 53.8%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.progress2{
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 53.8%;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    transform: translateY(-50%);
+    align-content: center;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+.circle{
+    border-radius: 50%;
+    border: 3px solid rgba(100, 148, 237, 0.377);
+    color: gray;
+    background-color: white;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+.circle.active{
+    border-color: cornflowerblue;
+}
+button{
+    background-color: cornflowerblue;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
