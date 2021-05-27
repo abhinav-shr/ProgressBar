@@ -26,12 +26,13 @@ body{
 }
 .divider{
     flex-grow: 1;
-    border-bottom: rgba(100, 148, 237, 0.377) solid 2px;
+    border-bottom: rgba(100, 148, 237, 0.377) solid 3px;
     margin: 0px;
+    transition: ease 1s;
 
 }
 .e{
-    border: rgba(100, 148, 237, 0.377) 2px solid;
+    border: rgba(100, 148, 237, 0.377) 3px solid;
     padding: 10px;
     height: 30px;
     width: 30px;
@@ -41,6 +42,7 @@ body{
     border-radius: 50%;
     color: black ;
     font-size: x-small;
+    transition: ease 1s;
 }
 nav{
     margin: 10px auto;
@@ -58,7 +60,7 @@ button[disabled]:hover{
 }
 .progress{
     border-color: cornflowerblue;
-    transition: ease 2s;
+    transition: ease 1s;
 }
 
 
